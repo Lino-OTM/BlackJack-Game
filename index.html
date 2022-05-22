@@ -11,7 +11,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header class="titulo">BlackJack</header>
@@ -19,8 +19,12 @@
     <div class="row mt-2">
       <div id="divBotones" class="col text-center">
         <button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
-        <button id="btnPedir" disabled="disabled" class="btn btn-primary">Pedir Carta</button>
-        <button id="btnDetener" disabled="disabled" class="btn btn-primary">Detener</button>
+        <button id="btnPedir" disabled="disabled" class="btn btn-primary">
+          Pedir Carta
+        </button>
+        <button id="btnDetener" disabled="disabled" class="btn btn-primary">
+          Detener
+        </button>
       </div>
     </div>
 
@@ -42,11 +46,11 @@
       </div>
     </div>
 
-    <script src="assets/js/underscore-umd-min.js"></script>
-    <script src="assets/js/juego-min.js"></script>
+    <script src="./assets/js/underscore-umd-min.js"></script>
+    <script src="./assets/js/juego-min.js"></script>
     <script>
       //inicializarJuego();
-      console.log( miModulo);
+      console.log(miModulo);
       document.querySelector("#btnNuevo").addEventListener("click", () => {
         miModulo.nuevoJuego();
       });
